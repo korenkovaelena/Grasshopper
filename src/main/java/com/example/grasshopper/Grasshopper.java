@@ -9,7 +9,7 @@ public class Grasshopper {
         this.destinations = destinations;
     }
 
-    public String isEaten(Frog frog){
+    public String isAlive(Frog frog){
         boolean isEaten = false;
         for (int i =0; i<destinations.size();i++){
             double distance = calculateDistance(destinations.get(i), frog.b);

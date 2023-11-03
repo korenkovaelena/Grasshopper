@@ -24,7 +24,7 @@ public class HelloController {
     public void initialize() throws IOException {
         Grasshopper g = GReadFromFile();
         Frog frog = FrogReadFromFile();
-        String result = g.isEaten(frog);
+        String result = g.isAlive(frog);
         writeToFile(result);
     }
 
