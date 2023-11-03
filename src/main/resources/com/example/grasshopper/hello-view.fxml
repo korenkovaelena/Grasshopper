@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.grasshopper.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane fx:id="fieldPane" prefHeight="388.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grasshopper.HelloController">
+   <children>
+      <Arc fx:id="frogFX" fill="#13651b" layoutX="279.0" layoutY="166.0" length="270.0" radiusX="30.0" radiusY="26.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Line fx:id="tongue" endX="100.0" layoutX="282.0" layoutY="166.0" startX="-7.39337158203125" />
+      <Circle fx:id="grasshopperFX" fill="#70ff1f" layoutX="426.0" layoutY="167.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
